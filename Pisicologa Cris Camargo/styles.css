@@ -5,19 +5,22 @@
 body {
     margin: 0;
     padding: 0;
-    background-color:#e49f96;
 }
 
 header{
-    height: 450px;
+    height: 880px;
 }
 
 
 .brand-title {
     text-align:center;
-    font-size: 1.5rem;
-    margin: .5rem;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    color: #99013e;
+    top: 500px;
 }
+
+
 
 
 .navbar {
@@ -97,8 +100,6 @@ header{
 
 .img_logo{
     border-radius: 50%;
-    width: 150px;
-    height:150px;
     display: block;
     margin: 50px auto;
     max-width: 100%;
@@ -110,8 +111,7 @@ header{
     color:#e49f96;
     position:relative;
     white-space: pre-line;
-    height:600px;
-    
+    height: 950px;
 }
 
 #quemsou h2{
