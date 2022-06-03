@@ -1,12 +1,20 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     margin: 0;
     padding: 0;
+    background-color:#e49f96;
 }
 
+header{
+    height: 450px;
+}
+
+
 .brand-title {
+    text-align:center;
     font-size: 1.5rem;
     margin: .5rem;
 }
@@ -61,8 +69,8 @@ body {
 
 .toggle-button {
     position: absolute;
-    top: .75rem;
-    right: 1rem;
+    top: 2rem;
+    right: 2rem;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -87,14 +95,29 @@ body {
     max-width: 100%;
 }
 
+.img_logo{
+    border-radius: 50%;
+    width: 150px;
+    height:150px;
+    display: block;
+    margin: 50px auto;
+    max-width: 100%;
+}
 #quemsou{
     background-color: #99013e;
-    text-align:center;
+    display: flex;
+    align-items:center;
     color:#e49f96;
     position:relative;
     white-space: pre-line;
-    word-break: break-word;
+    height:600px;
     
+}
+
+#quemsou h2{
+    display: flex;
+    align-items:cneter;
+    color:#e49f96;   
 }
 
 #grupodeleitura{
@@ -154,5 +177,14 @@ body {
 
     .navbar-links.active {
         display: flex;
+    }
+
+    .img_logo{
+        border-radius: 50%;
+        width: 150px;
+        height:150px;
+        display: block;
+        margin: 50px auto;
+        max-width: 100%;
     }
 }
