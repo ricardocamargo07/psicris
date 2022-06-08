@@ -20,8 +20,12 @@ header{
     top: 500px;
 }
 
-
-
+.center{
+    text-align:center;
+    font-size: 2.5rem;
+    margin: 0.5rem;
+    color: #99013e;
+}
 
 .navbar {
     display: flex;
@@ -104,49 +108,145 @@ header{
     margin: 50px auto;
     max-width: 100%;
 }
+
+h2{
+    font-size: 2rem;
+    text-align:center;
+}
+
+p{
+    font-size: 1rem;
+    text-align:center;
+    border-bottom: 1rem;
+}
+
+.p1{
+    font-size: 1rem;
+    text-align:center;
+}
+.final-final{
+    font-size: 1rem;
+    text-align:center;
+    color:#99013e;
+    text-decoration:none;
+}
+
+.social-icons{
+    border-radius: 100%;
+    width: 10%;
+    color:#99013e;
+}
+
 #quemsou{
     background-color: #99013e;
-    display: flex;
+    display: grid;
     align-items:center;
     color:#e49f96;
     position:relative;
     white-space: pre-line;
-    height: 950px;
+    height: 100vh;
+
 }
 
-#quemsou h2{
-    display: flex;
-    align-items:cneter;
-    color:#e49f96;   
-}
 
 #grupodeleitura{
     background-color: #e49f96;
-    text-align:center;
+    display: grid;
+    align-items:center;
     color:#99013e;
     position:relative;
     white-space: pre-line;
-    word-break: break-word;
+    white-space: pre-line;
+    height: 100vh;
+    
     
 }
 
 #especialidade{
     background-color: #99013e;
-    text-align:center;
+    display: grid;
+    align-items:center;
     color:#e49f96;
+    position:relative;
     white-space: pre-line;
-    word-break: break-word;
-    
+    height: 100vh;
 }
 
 #contato_agendesuaconsulta{
     background-color: #e49f96;
-    text-align:center;
+    display: grid;
+    align-items:center;
     color:#99013e;
+    position:relative;
     white-space: pre-line;
-    word-break: break-word;
+    white-space: pre-line;
+    height: 100vh;
 }
 
+fieldset{
+    border:0;
+    width: 50vw; 
+}
+
+input, select, textarea {
+    position: relative;
+    border-radius: 5px;
+    border: 0;
+    display: flex;
+    width:75vw;
+    height: 40px;
+}
+
+.form_nome{
+    position: relative;
+    text-align:center;
+    border-left: 50vw;
+    margin-right: 25vw;
+}
+
+.form_email{
+    position: relative;
+    text-align:center;
+    border-left: 25vw;
+    margin-right: 25vw;
+}
+
+.form_telefone{
+    position: relative;
+    text-align:center;
+    border-left: 25vw;
+    margin-right: 25vw;
+}
+
+.form_assunto{
+    position: relative;
+    text-align:center;
+    border-left: 25vw;
+    margin-right: 25vw;
+}
+
+.form_menssagem{
+    position: relative;
+    text-align:center;
+    border-left:7px;
+    margin-right: 25vw;
+}
+.button{
+    position: relative;
+    margin-left: 1em;
+    padding: 1em;
+    text-align:center;
+    margin-left : 49vw;
+}
+.button:hover{
+    background-color:#99013e;
+}
+
+#link_ric_hacks{
+    text-decoration: none;
+    color: #99013e;
+    font-size: 1rem;
+}
 
 @media (max-width: 930px) {
     .navbar {
@@ -181,10 +281,33 @@ header{
 
     .img_logo{
         border-radius: 50%;
-        width: 150px;
-        height:150px;
+        width: 160px;
+        height:160px;
         display: block;
         margin: 50px auto;
         max-width: 100%;
+    }
+
+    .brand-title {
+        text-align:center;
+        font-size: 2rem;
+        margin: 0.5rem;
+        color: #99013e;
+        top: 500px;
+    }
+    
+    .img-circle_person{
+        border-radius: 50%;
+        width: 300px;
+        height:300px;
+        display: block;
+        margin: 5px auto;
+        max-width: 100%;
+    }
+
+    .social-icons{
+        border-radius: 100%;
+        width: 30%;
+        color:#99013e;
     }
 }

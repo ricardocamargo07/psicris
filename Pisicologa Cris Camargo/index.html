@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel="stylesheet" href="background_styles.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="styles.css">
       <script src="script.js" defer></script>
       <title>Cris Camargo Psicologia</title>
@@ -18,8 +19,8 @@
         <div class="navbar-links">
           <ul>
             <li><a class="page-scroll" href="#quemsou">Quem sou</a></li>
-            <li><a class="page-scroll" href="#grupodeleitura">Grupo de Leitura</a></li>
-            <li><a class="page-scroll" href="#especialidade">Especialidade</a></li>
+            <li><a class="page-scroll" href="#grupodeleitura">Leitura Terapêutica</a></li>
+            <li><a class="page-scroll" href="#especialidade">Especialidades</a></li>
             <li><a class="page-scroll" href="#contato_agendesuaconsulta">Contato</a></li>
           </ul>
         </div>
@@ -28,44 +29,87 @@
 			    <div class="container">
             <img src="images/inicial.png" class="img_logo">
               <div class="brand-title">
-                <h2>Cristiane de Camargo Barros
+                <h1>Cristiane de Camargo Barros
                   <br>Psicóloga
-                  <font size=3><p>CRP RJ 05/69031</p></font>
-                </h2>
+                  <p>CRP RJ 05/69031</p>
+                </h1>
               </div>
           </div>
 	    </header>
       <!-- QUEM SOU -->
       <section id="quemsou">
-        <div class="container"></div>
+        <div class="container">
             <img src="images/fotopsi.jpg" class="img-circle_person">
             <div>
-            <font size=5><h2>QUEM SOU</h2></font>
-            <p>O escritório Marcio Camargo Advogados, localizado no Distrito Federal, está capacitado para atuar nas diversas áreas do Direito de forma personalizada, honesta e dinâmica.
+            <h2>QUEM SOU</h2>
+            <p class="p1">O escritório Marcio Camargo Advogados, localizado no Distrito Federal, está capacitado para atuar nas diversas áreas do Direito de forma personalizada, honesta e dinâmica.
             </br>A sólida formação acadêmica de seu sócio fundador, aliada a sua vasta experiência profissional, o credencia na advocacia preventiva, consultiva e contenciosa do Direito de Família e Sucessões. 
             </br>A capacidade de seus colaboradores, parceiros e associados que atuam no Direito Civil, Constitucional, Trabalho, Administrativo, Penal, Eleitoral, Ambiental e outras especializações, completam a banca de profissionais.
             </br>Desta forma, o objetivo do Cliente será alcançado nos mais diversos ramos do Direito, pois a missão da MCA é a de atender com eficiência, dedicação e presteza os casos confiados ao escritório.</p>
             </div>
-          </div>
+        </div>
       </section>
       <!-- LOBAS -->
       <section id="grupodeleitura">
         <div class="container">
-          <p><h2>22222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222</h2></p>
+          <h2>Leitura Terapêutica</h2>
         </div>
       </section>
     <!-- ESPECIALIDADE -->
     <section id="especialidade">
       <div class="container">
-        <p><h2>33333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333</h2></p>
+        <h2>Especialidades</h2>
       </div>
     </section>
     <!-- CONTATO / AGENDE SUA CONSULTA -->
     <section id="contato_agendesuaconsulta">
       <div class="container">
-        <p><h2>44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444</h2></p>
+        <h2>Contato</h2>
+        <p>Se precisar de ajuda, por favor entre em contato!</p>
+        <form>
+              <div class="form_nome">
+                <labe for="nome">Nome: </label>
+                <input type="text" name="name" required id="nome">
+              </div>
+              <div class="form_email" >
+              <label for="email">Email: </label>
+              <input type="email" name="email" required id="email">
+              </div>
+              <div class="form_telefone">
+                <label for="cellphone">Telefone: </label>
+                <input type="phone" name="cellphone" pattern="([0-9]{2})[0-9]{5}-[0-9]{4}" placeholder="(DD) 99999-9999" required="required" id="cellphone">
+              </div>
+              <div class="form_assunto">
+                <label>Assunto: </label>
+                <select id="subject" required>
+                  <option selected disabled value="">Escolha uma opção abaixo</option>
+                  <option value="Agendamento">Agendamento de consulta</option>
+                  <option value="Duvida">Dúvida</option>
+                  <option value="Outros">Outros</option>
+                </select>
+              </div>
+              <div class="form_menssagem">
+                <br>
+                <label>Mensagem: </label>
+                <textarea id="textarea" name="textarea" required></textarea>
+              </div>
+            <button class="button" type="submit" id="submit">Enviar</button>
+        </form>
       </div>
     </section>
-
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="center">
+         <div class="row">
+              <div class="brand-title" >
+                  <a href="https://www.instagram.com/criscamargo03/"><i class="instagram"></i> <img src="images/insta.png" class="social-icons"></a>
+                  <a href="https://api.whatsapp.com/send?phone=5521998285313&amp;text=Olá, gostaria de agendar uma consulta."><img src="images/wpp.png" class="social-icons"><i class="whatsapp"></i></a>
+                  <h6>&copy; 2022 Psicóloga Cristiane de Camargo Barros.<br>
+                    <a href="https://www.instagram.com/ric_hacks/" id="link_ric_hacks">Desenvolvido por @ric_hacks</a></h6>
+              </div>
+          </div>
+      </div>
+    </footer>
+    
     </body>
 </html>
