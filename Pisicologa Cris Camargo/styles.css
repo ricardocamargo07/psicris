@@ -11,10 +11,10 @@ header{
     height: 880px;
 }
 
-
 .brand-title {
+    /* font-family: 'Cormorant Garamond', serif; */
     text-align:center;
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin: 0.5rem;
     color: #99013e;
     top: 500px;
@@ -51,18 +51,19 @@ header{
 }
 
 .navbar-links li a {
+    
     text-decoration: none;
     font-size: 1.2rem;
     position:relative;
     display:inline-block;
     margin:1rem;
     color:#e49f96;
-    transition: all 0.3s 
+    transition: all 0.3s ;
 }
 .navbar-links li a::after {
     position:absolute;
     opacity:0;
-    transition: all 0.3s 
+    transition: all 0.3s;
 }
 
 .navbar-links li a:hover, .navbar-links li a:focus{
@@ -75,20 +76,21 @@ header{
 }
 
 .toggle-button {
-    position: absolute;
+    position: fixed;
     top: 2rem;
     right: 2rem;
-    display: none;
     flex-direction: column;
     justify-content: space-between;
     width: 30px;
     height: 21px;
+    z-index: 1;
 }
 
 .toggle-button .bar {
     height: 3px;
     width: 100%;
     background-color: #99013e;
+    box-shadow: 1.5px 1.5px #e49f96;
     border-radius: 10px;
     transition: all 0.6s 
 }
@@ -123,6 +125,7 @@ p{
 .p1{
     font-size: 1rem;
     text-align:center;
+    border-left: 50px;
 }
 .final-final{
     font-size: 1rem;
@@ -193,53 +196,35 @@ input, select, textarea {
     border-radius: 5px;
     border: 0;
     display: flex;
-    width:75vw;
+    width:60vw;
     height: 40px;
 }
-
-.form_nome{
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .form_fields {
     position: relative;
-    text-align:center;
+    text-align: left;
     border-left: 50vw;
-    margin-right: 25vw;
-}
-
-.form_email{
-    position: relative;
-    text-align:center;
-    border-left: 25vw;
-    margin-right: 25vw;
-}
-
-.form_telefone{
-    position: relative;
-    text-align:center;
-    border-left: 25vw;
-    margin-right: 25vw;
-}
-
-.form_assunto{
-    position: relative;
-    text-align:center;
-    border-left: 25vw;
-    margin-right: 25vw;
-}
-
-.form_menssagem{
-    position: relative;
-    text-align:center;
-    border-left:7px;
-    margin-right: 25vw;
-}
-.button{
+    font-size: 18px;
+  }
+  .button {
     position: relative;
     margin-left: 1em;
     padding: 1em;
-    text-align:center;
-    margin-left : 49vw;
-}
+    text-align: center;
+    border-radius: 5px;
+    background-color: #e49f96;
+    color:#99013e;
+    width: 100px;
+    border: 0;
+  }
 .button:hover{
     background-color:#99013e;
+    color: #e49f96;
 }
 
 #link_ric_hacks{
@@ -247,6 +232,23 @@ input, select, textarea {
     color: #99013e;
     font-size: 1rem;
 }
+/* BACKTOTOP button */
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    transform: rotate(-90deg);
+  }
+  
+  #myBtn:hover {
+    color: #555; /* Add a dark-grey background on hover */
+  }
 
 @media (max-width: 930px) {
     .navbar {
@@ -257,6 +259,8 @@ input, select, textarea {
     .toggle-button {
         display: flex;
     }
+    #myBtn {
+        display: none;}
 
     .navbar-links {
         display: none;
@@ -309,5 +313,13 @@ input, select, textarea {
         border-radius: 100%;
         width: 30%;
         color:#99013e;
+    }
+    input, select, textarea {
+        position: relative;
+        border-radius: 5px;
+        border: 0;
+        display: flex;
+        width:70vw;
+        height: 40px;
     }
 }
