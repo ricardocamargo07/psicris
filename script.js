@@ -5,16 +5,15 @@ toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
 
-// window.addEventListener("scroll", (event) => {
-//   var liveWidth = window.pageXOffset;
-//   var liveHeight = window.pageYOffset;
+window.addEventListener("scroll", (event) => {
+  var liveHeight = window.pageYOffset;
 
-//     if(liveWidth< 930 && liveHeight > 960){
-//       toggleButton.style.display = "none";
-//     } else if (liveWidth > 930){
-//       toggleButton.style.display = "none";
-//     }
-// });
+    if(liveHeight > 960){
+      toggleButton.style.display = "none";
+    } else {
+      toggleButton.style.display = "";
+    }
+});
 
 
 //Get the button:
