@@ -20,6 +20,11 @@ header{
     top: 500px;
 }
 
+.container {
+    justify-content: center;
+    align-items: center;
+    border-top: 1rem    }
+
 .center{
     text-align:center;
     font-size: 2.5rem;
@@ -136,9 +141,22 @@ p{
 
 .social-icons{
     border-radius: 100%;
-    width: 10%;
+    width: 7%;
+    margin-top: 50px;
+    margin-bottom: 1px;
     color:#99013e;
 }
+.walking_beach {
+    width: 25%;
+    display: block;
+    margin: 50px auto;
+    max-width: 100%;
+
+
+}
+.espaco {
+    padding-left: 50px;
+  }
 
 #quemsou{
     background-color: #99013e;
@@ -250,6 +268,8 @@ form {
     color: #555; /* Add a dark-grey background on hover */
   }
 
+
+
 @media (max-width: 930px) {
     .navbar {
         flex-direction: column;
@@ -312,7 +332,6 @@ form {
     .social-icons{
         border-radius: 100%;
         width: 30%;
-        color:#99013e;
     }
     input, select, textarea {
         position: relative;
@@ -322,4 +341,18 @@ form {
         width:70vw;
         height: 40px;
     }
+
+    #grupodeleitura{
+        background-image: url(images/walking_beach.png);
+        background-size: cover;
+        background-color: #e49f96;
+        display: grid;
+        align-items:center;
+        color:#99013e;
+        position:relative;
+        white-space: pre-line;
+        white-space: pre-line;
+        height: 100vh;
+    }
+
 }

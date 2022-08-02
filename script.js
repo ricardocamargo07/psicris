@@ -1,5 +1,6 @@
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
 const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+const walkingBeach = document.getElementsByClassName("walking_beach");
 
 toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
@@ -35,3 +36,4 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
