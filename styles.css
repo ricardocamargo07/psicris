@@ -23,7 +23,10 @@ header{
 .container {
     justify-content: center;
     align-items: center;
-    border-top: 1rem    }
+    border-bottom: 1rem;
+}
+
+
 
 .center{
     text-align:center;
@@ -124,13 +127,20 @@ h2{
 p{
     font-size: 1rem;
     text-align:center;
-    border-bottom: 1rem;
+    border: 1rem;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
 }
 
 .p1{
-    font-size: 1rem;
+    color: white;
+    font-size: 1.25rem;
     text-align:center;
-    border-left: 50px;
+    border: 1rem;
+    display:block;
+    right:1rem;
+    left:1rem;
+    text-align:justify;
 }
 .final-final{
     font-size: 1rem;
@@ -304,11 +314,11 @@ form {
     }
 
     .img_logo{
-        border-radius: 50%;
+        margin-top:200px;
+        border:50px;
         width: 160px;
         height:160px;
         display: block;
-        margin: 50px auto;
         max-width: 100%;
     }
 
