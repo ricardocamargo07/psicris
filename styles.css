@@ -11,6 +11,10 @@ header{
     height: 880px;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 .brand-title {
     /* font-family: 'Cormorant Garamond', serif; */
     text-align:center;
@@ -320,10 +324,10 @@ form {
     }
 
     .img_logo{
-        margin-top:200px;
+        margin-top:20px;
         border:50px;
-        width: 160px;
-        height:160px;
+        width: 125px;
+        height:125px;
         display: block;
         max-width: 100%;
     }
@@ -369,6 +373,10 @@ form {
         white-space: pre-line;
         white-space: pre-line;
         height: 100vh;
+    }
+
+    header{
+        height: 420px;
     }
 
 }
